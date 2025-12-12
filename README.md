@@ -11,7 +11,7 @@ Puedes abrir los archivos en tu IDE/editor favorito
 (VS Code, Code::Blocks, CLion, etc.) y configurar ahí la compilación.
 ---
 
-## 🎯 Objetivo del repositorio
+##  Objetivo del repositorio
 
 - Practicar los fundamentos de la programación estructurada.
 - Reforzar el uso de **secuencias, condicionales e iteraciones**.
@@ -20,7 +20,7 @@ Puedes abrir los archivos en tu IDE/editor favorito
 
 ---
 
-## 🧩 Temas que se practican
+##  Temas que se practican
 
 A lo largo de las distintas carpetas se trabajan, entre otros, los siguientes temas:
 
@@ -40,7 +40,7 @@ A lo largo de las distintas carpetas se trabajan, entre otros, los siguientes te
 
 ---
 
-## 📂 Estructura del repositorio
+##  Estructura del repositorio
 
 Estructura general:
 
