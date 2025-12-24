@@ -3,188 +3,273 @@
 Conjunto de ejercicios en **C y C++** pensados para practicar desde lo más básico
 hasta problemas más complejos de programación estructurada y modular.
 
-El objetivo de este repositorio es servir como **campo de entrenamiento**:
-un lugar donde reforzar lógica, sintaxis y buenas prácticas mientras se
-resuelven ejercicios reales.
+Este repositorio es un **campo de entrenamiento**: refuerza lógica, sintaxis y buenas prácticas
+mientras resuelves ejercicios reales.
 
-Puedes abrir los archivos en tu IDE/editor favorito
-(VS Code, Code::Blocks, CLion, etc.) y configurar ahí la compilación.
 ---
 
-##  Objetivo del repositorio
+## Objetivo del repositorio
 
 - Practicar los fundamentos de la programación estructurada.
 - Reforzar el uso de **secuencias, condicionales e iteraciones**.
-- Introducir el uso de **funciones, modularización y punteros**.
-- Tener un histórico de ejercicios que muestren tu avance en C/C++.
+- Introducir **funciones, modularización y punteros** (cuando aplica).
+- Mantener un histórico de ejercicios que muestre tu avance en C/C++.
 
 ---
 
-##  Temas que se practican
+## Temas que se practican
 
-A lo largo de las distintas carpetas se trabajan, entre otros, los siguientes temas:
-
-- Entrada y salida de datos (`scanf/printf`, `cin/cout`).
+- Entrada y salida (`scanf/printf`, `cin/cout`).
 - Operaciones aritméticas y lógicas.
 - Estructuras de control:
   - `if`, `else`, `switch`
   - `while`, `for`, `do...while`
 - Funciones y paso de parámetros.
-- Arreglos y cadenas de caracteres.
+- Arreglos y cadenas.
 - (Donde aplica) Punteros y manejo básico de memoria.
 - (Donde aplica) Introducción a estructuras más grandes en C++.
 
 > Nota: los nombres de las carpetas siguen la estructura usada en clase
-> (por ejemplo: `j1pro...`, `j2pro...`, etc.), donde cada una agrupa
-> un conjunto de ejercicios de una práctica o sesión.
+> (por ejemplo: `j1pro...`, `j2pro...`, etc.). Cada carpeta agrupa ejercicios de una práctica/sesión.
 
 ---
-## ⭐ Ejercicios recomendados para revisar primero ⭐
 
-Si quieres ver algunos de los ejercicios más representativos, sugiero empezar por estos:
+## Cómo usar este repo
 
-- **j8 – Conversión Fahrenheit → Celsius (C++)**  
-  Programa que convierte grados Fahrenheit a Celsius de **dos maneras**:
-  - una conversión **aproximada** en pasos (resta, división, ajuste),  
-  - y una conversión **exacta** con la fórmula `C = 5/9 · (F - 32)` o `C = (F - 32) / 1.8`.  
-  Muestra bien el uso de operaciones aritméticas y salida formateada.
+- Abre la carpeta del ejercicio en tu IDE/editor (VS Code, Code::Blocks, CLion, etc.).
+- Compila y ejecuta el archivo principal.
+- Si quieres navegar rápido, usa la **tabla índice** de abajo.
 
-- **j23 – Áreas de figuras con menú y `switch` (C++)**  
-  Calcula el área de **círculo, cuadrado, triángulo o rectángulo** según una opción de menú.  
-  Pide solo los datos necesarios para cada figura y usa la estructura `switch` para controlar
-  el flujo. Es un buen ejemplo de selección múltiple y organización simple de casos.
+> Tip: si usas VS Code, configura tareas de compilación para C y C++ (gcc/g++).
 
-- **j28 – Abecedario con `do-while` (C)**  
-  Imprime el abecedario (mayúscula y minúscula: `Aa`, `Bb`, `Cc`, …) usando un ciclo
-  `do-while`. Sirve como ejemplo de manejo de caracteres y de cómo recorrer rangos de
-  letras en ASCII.
 ---
-##  Ejercicios incluidos
 
-Resumen de los ejercicios tipo `jX` que contiene este repositorio:
+## ⭐ Recomendados para revisar primero
 
-- **j1 – Área de triángulo (C)**  
-  Calcula el área de un triángulo usando variables `a`, `b` y `h` de tipo `int`.  
-  No solicita datos al usuario.
+| Ejercicio | Tema | Qué practica | Link |
+|---|---|---|---|
+| j8 | Conversión °F→°C | Aritmética + salida formateada | [Ver j8](./j8) |
+| j23 | Menú + `switch` | Selección múltiple + organización | [Ver j23](./j23) |
+| j28 | `do-while` + chars | Ciclos + ASCII | [Ver j28](./j28) |
 
-- **j2 – Área de triángulo (C)**  
-  Igual que j1, pero usando variables `areaTriangulo`, `base` y `altura`.  
-  No solicita datos al usuario.
+---
 
-- **j4 – Operaciones básicas con dos enteros (C)**  
-  Pide dos enteros `a` y `b` y calcula: `a+b`, `a-b`, `b-a`, `a*b`, `a/b`, `b/a`, `a%b`, `b%a`, mostrando todos los resultados.
+## Índice de ejercicios (tabla)
 
-- **j5 – Área de círculo sin entrada (C)**  
-  Calcula el área de un círculo con variables `a`, `r` y `pi` de tipo `float`.  
-  No pide datos al usuario, solo imprime los valores.
+> Reemplaza los links `./jX` por la ruta real de cada carpeta (ej. `./j8pro...`).
 
-- **j7 – Conversión °C → °F (C++)**  
-  Pide una temperatura en grados Celsius y calcula Fahrenheit con  
-  `F = 1.8 * C + 32`, mostrando ambos valores.
+| Ejercicio | Lenguaje | Tópico principal | Descripción corta | Link |
+|---|---|---|---|---|
+| j1 | C | Variables | Área de triángulo (sin entrada) | [Abrir](./j1) |
+| j2 | C | Variables | Área de triángulo (sin entrada) | [Abrir](./j2) |
+| j4 | C | Aritmética | Operaciones básicas con dos enteros | [Abrir](./j4) |
+| j5 | C | Constantes / float | Área de círculo (sin entrada) | [Abrir](./j5) |
+| j7 | C++ | Aritmética | Conversión °C → °F | [Abrir](./j7) |
+| j8 | C++ | Aritmética | °F → °C aproximada y exacta | [Abrir](./j8) |
+| j9 | C | Entrada/Salida | Área de círculo con `scanf` | [Abrir](./j9) |
+| j11 | C | Variables | Intercambio de 3 variables | [Abrir](./j11) |
+| j12 | C | Porcentajes | Porcentaje de asistencias | [Abrir](./j12) |
+| j13 | C | Arreglos | Vector * factor (sin iteraciones) | [Abrir](./j13) |
+| j14 | C | `struct` | Registro Alumno | [Abrir](./j14) |
+| j15 | C | `struct` | Registros Árbol y Libro | [Abrir](./j15) |
+| j16 | C | `struct` | Alumno + Carrera | [Abrir](./j16) |
+| j17 | C++ | Condicional | Descuento con 1 variable y 1 `if` | [Abrir](./j17) |
+| j18 | C++ | Comparación | 3 enteros en orden creciente | [Abrir](./j18) |
+| j19 | C++ | Condicional | Incremento de salario por rangos | [Abrir](./j19) |
+| j20 | C | `switch` / fechas | Mes, día y estación | [Abrir](./j20) |
+| j21 | C | Condicional | Año bisiesto | [Abrir](./j21) |
+| j22 | C++ | `switch` | Calculadora por operador | [Abrir](./j22) |
+| j23 | C++ | Menú + `switch` | Áreas de figuras | [Abrir](./j23) |
+| j24 | C++ | Menú + IVA | Peaje por tipo de vehículo | [Abrir](./j24) |
+| j25 | C | Operadores | Operador elegido por usuario | [Abrir](./j25) |
+| j26 | C | Condicional | Transformación usando una sola variable | [Abrir](./j26) |
+| j27 | C | Tiempo | Diferencia de tiempos HH:MM:SS | [Abrir](./j27) |
+| j28 | C | `do-while` / caracteres | Abecedario Aa, Bb, Cc… (mayús/minús) | [Abrir](./j28) |
 
-- **j8 – Conversión °F → °C aproximada y exacta (C++)**  
-  Pide una temperatura en Fahrenheit y muestra:  
-  - Conversión **aproximada**:  
-    1) `F - 32`  
-    2) resultado / 2  
-    3) sumar 1/10 de ese valor  
-  - Conversión **exacta** usando:  
-    `C = 5/9 * (F - 32)` o `C = (F - 32) / 1.8`.
 
-- **j9 – Área de círculo con entrada (C)**  
-  Usa `scanf()` para leer el radio y calcula el área con `areaCirculo`, `radio` y  
-  una constante `const PI = 3.1416`.
+---
 
-- **j11 – Intercambio de tres variables (C)**  
-  Con variables `a`, `b` y `c`, muestra sus valores originales, luego los intercambia:  
-  `a = valor inicial de c`, `b = valor inicial de a`, `c = valor inicial de b`,  
-  y vuelve a imprimir los nuevos valores.
+## Descripción detallada (por ejercicio)
 
-- **j12 – Porcentaje de asistencias (C)**  
-  Con `MAXIMO_ASISTENCIAS = 34`, pide cuántas faltas tiene un alumno y calcula el  
-  porcentaje de asistencias mostrando los decimales correspondientes.
+<details>
+<summary><b>j1 – Área de triángulo (C)</b></summary>
 
-- **j13 – Vector y factor multiplicador (C)**  
-  Lee 10 enteros en un arreglo, luego un factor. Multiplica cada elemento por el  
-  factor y guarda el resultado en un segundo arreglo, que después se imprime.  
-  *Restricción*: no usar estructuras iterativas.
+Calcula el área de un triángulo usando variables `a`, `b` y `h` de tipo `int`.
+No solicita datos al usuario.
 
-- **j14 – Registro Alumno (C)**  
-  Define un `struct Alumno` con 3 campos: cadena, entero y flotante.  
-  Lee los datos desde consola e imprime los campos en el mismo orden.
+</details>
 
-- **j15 – Registros Arbol y Libro (C)**  
-  Define `struct Arbol` (entero, carácter, cadena) y `struct Libro` (cadena, entero, flotante).  
-  Lee todos los campos de ambos registros desde consola y luego los imprime.
+<details>
+<summary><b>j2 – Área de triángulo (C)</b></summary>
 
-- **j16 – Alumno + Carrera (C)**  
-  Amplía el ejercicio 14:  
-  - Define `struct Carrera` con `idCarrera` (int) y `nombre` (cadena).  
-  - Agrega `idCarrera` a `struct Alumno`.  
-  Se leen primero los datos de `Carrera` y luego los de `Alumno`, asignando el  
-  `idCarrera` de la carrera al alumno.
+Igual que j1, pero usando variables `areaTriangulo`, `base` y `altura`.
+No solicita datos al usuario.
 
-- **j17 – Descuento en tienda (C++)**  
-  Pide el importe total de compra de artículos de primera necesidad.  
-  Si la compra es ≥ $50, aplica 20% de descuento; si no, se deja igual.  
-  Muestra únicamente el monto a pagar.  
-  *Restricciones*: usar solo una variable y un solo `if` sin `else`.
+</details>
 
-- **j18 – Tres enteros en orden creciente (C++)**  
-  Recibe tres enteros distintos y determina si están en orden creciente, mostrando  
-  exactamente uno de estos mensajes:  
-  - `"están en orden creciente"`  
-  - `"no están en orden creciente"`.
+<details>
+<summary><b>j4 – Operaciones básicas con dos enteros (C)</b></summary>
 
-- **j19 – Incremento de salario (C++)**  
-  Lee el salario de un profesor y calcula su nuevo salario aplicando el criterio de  
-  incrementos dado (por rangos). Si no le aplica incremento, imprime el salario tal cual.
+Pide dos enteros `a` y `b` y calcula:
+`a+b`, `a-b`, `b-a`, `a*b`, `a/b`, `b/a`, `a%b`, `b%a`, mostrando resultados.
 
-- **j20 – Mes, día y estación (C)**  
-  Pide mes (1–12) y día (1–31). Imprime el nombre del mes y la estación del año  
-  (por ejemplo: “marzo / primavera” o “marzo / invierno” según la fecha límite).
+</details>
 
-- **j21 – Año bisiesto (C)**  
-  Pide un año y determina si es bisiesto con las reglas:  
-  - múltiplos de 4 → bisiestos,  
-  - múltiplos de 100 → no bisiestos,  
-  - múltiplos de 400 → sí bisiestos.
+<details>
+<summary><b>j5 – Área de círculo sin entrada (C)</b></summary>
 
-- **j22 – Calculadora con switch (C++)**  
-  Solicita dos valores numéricos y un operador (`+`, `-`, `*`, `/`, etc.).  
-  Usa `switch` para realizar la operación e imprime operandos y resultado.  
-  Acepta enteros o reales.
+Calcula el área de un círculo con variables `a`, `r` y `pi` de tipo `float`.
+No pide datos al usuario.
 
-- **j23 – Áreas de figuras con menú (C++)**  
-  Muestra un menú:  
-  1) círculo, 2) cuadrado, 3) triángulo, 4) rectángulo.  
-  Según la opción, pide los datos necesarios, calcula el área e imprime figura y resultado.  
-  Usa `switch` y no repite la ejecución del programa.
+</details>
 
-- **j24 – Peaje en autopista (C++)**  
-  Muestra un menú para tipo de vehículo: motocicleta, automóvil o camión.  
-  Calcula el importe a pagar según:  
-  - moto: $35 + IVA,  
-  - auto: $48.50 + IVA,  
-  - camión: $57 + $18 por tonelada + IVA (16%).  
-  Imprime tipo de vehículo e importe final.
+<details>
+<summary><b>j7 – Conversión °C → °F (C++)</b></summary>
 
-- **j25 – Operador elegido por el usuario (C)**  
-  Pide primero un operador (`+`, `-`, `*`, `/`, `%`), luego los enteros `a` y `b`.  
-  Muestra la operación realizada y su resultado.
+Pide una temperatura en Celsius y calcula Fahrenheit con `F = 1.8 * C + 32`.
 
-- **j26 – Transformación de un solo valor (C)**  
-  Pide un número `x` y trabaja siempre sobre la misma variable:  
-  - Si `x` > 0: lo eleva al cuadrado; si el nuevo `x` es par, suma 5, si no, resta 5.  
-  - Si `x` < 0: lo eleva al cubo, toma su valor absoluto; si el nuevo `x` > 100, suma 100,  
-    en otro caso resta 100.  
-  Imprime el valor final de `x`.
+</details>
 
-- **j27 – Diferencia de tiempos HH:MM:SS (C)**  
-  Pide tiempo inicial (hora, minuto, segundo) y tiempo final.  
-  Calcula el tiempo transcurrido en formato `HH:MM:SS` o avisa si el tiempo final es menor  
-  que el inicial. Respeta rangos válidos (0–59 seg/min, 0–23 horas).
+<details>
+<summary><b>j8 – Conversión °F → °C aproximada y exacta (C++)</b></summary>
 
-- **j28 – Abecedario con do-while (C)**  
-  Imprime el abecedario (al menos el inglés) mostrando pares mayúscula/minúscula:  
-  `Aa`, `Bb`, `Cc`, … usando la estructura de control `do-while`.
+Pide Fahrenheit y muestra conversión aproximada y exacta.
+
+</details>
+
+<details>
+<summary><b>j9 – Área de círculo con entrada (C)</b></summary>
+
+Usa `scanf()` para leer el radio y calcula el área.
+
+</details>
+
+<details>
+<summary><b>j11 – Intercambio de tres variables (C)</b></summary>
+
+Muestra valores originales, intercambia `a`, `b`, `c` y vuelve a imprimir.
+
+</details>
+
+<details>
+<summary><b>j12 – Porcentaje de asistencias (C)</b></summary>
+
+Con `MAXIMO_ASISTENCIAS = 34`, pide faltas y calcula porcentaje.
+
+</details>
+
+<details>
+<summary><b>j13 – Vector y factor multiplicador (C)</b></summary>
+
+Lee 10 enteros, luego un factor. Multiplica y guarda en un segundo arreglo.
+<i>Restricción: no usar estructuras iterativas.</i>
+
+</details>
+
+<details>
+<summary><b>j14 – Registro Alumno (C)</b></summary>
+
+`struct Alumno` con 3 campos: cadena, entero y flotante.
+
+</details>
+
+<details>
+<summary><b>j15 – Registros Arbol y Libro (C)</b></summary>
+
+`struct Arbol` y `struct Libro`, lectura e impresión.
+
+</details>
+
+<details>
+<summary><b>j16 – Alumno + Carrera (C)</b></summary>
+
+Agrega `struct Carrera` y relaciona `idCarrera` con `Alumno`.
+
+</details>
+
+<details>
+<summary><b>j17 – Descuento en tienda (C++)</b></summary>
+
+Si compra ≥ $50 aplica 20% de descuento.
+<i>Restricción: solo 1 variable y 1 `if` sin `else`.</i>
+
+</details>
+
+<details>
+<summary><b>j18 – Tres enteros en orden creciente (C++)</b></summary>
+
+Determina si tres enteros distintos están en orden creciente.
+
+</details>
+
+<details>
+<summary><b>j19 – Incremento de salario (C++)</b></summary>
+
+Calcula nuevo salario aplicando criterio por rangos.
+
+</details>
+
+<details>
+<summary><b>j20 – Mes, día y estación (C)</b></summary>
+
+Imprime nombre del mes y estación del año según fecha.
+
+</details>
+
+<details>
+<summary><b>j21 – Año bisiesto (C)</b></summary>
+
+Reglas 4/100/400 para bisiesto.
+
+</details>
+
+<details>
+<summary><b>j22 – Calculadora con switch (C++)</b></summary>
+
+Solicita operandos + operador y resuelve con `switch`.
+
+</details>
+
+<details>
+<summary><b>j23 – Áreas de figuras con menú (C++)</b></summary>
+
+Menú de figuras y cálculo de área con `switch`.
+
+</details>
+
+<details>
+<summary><b>j24 – Peaje en autopista (C++)</b></summary>
+
+Importe por tipo de vehículo + IVA (16%).
+
+</details>
+
+<details>
+<summary><b>j25 – Operador elegido por el usuario (C)</b></summary>
+
+Pide operador, luego `a` y `b`, imprime operación y resultado.
+
+</details>
+
+<details>
+<summary><b>j26 – Transformación de un solo valor (C)</b></summary>
+
+Manipula `x` con reglas según signo, paridad y rangos.
+
+</details>
+
+<details>
+<summary><b>j27 – Diferencia de tiempos HH:MM:SS (C)</b></summary>
+
+Calcula tiempo transcurrido o avisa si final < inicial.
+
+</details>
+
+<details>
+<summary><b>j28 – Abecedario con `do-while` (C)</b></summary>
+
+Imprime el abecedario en formato `Aa`, `Bb`, `Cc`, … usando un ciclo `do...while`.
+Sirve como ejemplo de manejo de caracteres y recorrido de rangos en ASCII.
+
+</details>
+
