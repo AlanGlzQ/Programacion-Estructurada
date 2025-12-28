@@ -13,19 +13,19 @@ mientras resuelves ejercicios reales.
 - Practicar los fundamentos de la programación estructurada.
 - Reforzar el uso de **secuencias, condicionales e iteraciones**.
 - Introducir **funciones, modularización y punteros** (cuando aplica).
-- Mantener un histórico de ejercicios que muestre tu avance en C/C++.
+- Mantener un histórico de ejercicios que muestren tu avance en C/C++.
 
 ---
 
 ## Temas que se practican
 
-- Entrada y salida (`scanf/printf`, `cin/cout`).
+- Entrada y salida (`scanf/printf`, `cin/cout`, `fgets`).
 - Operaciones aritméticas y lógicas.
 - Estructuras de control:
   - `if`, `else`, `switch`
   - `while`, `for`, `do...while`
 - Funciones y paso de parámetros.
-- Arreglos y cadenas.
+- Arreglos, cadenas y matrices.
 - (Donde aplica) Punteros y manejo básico de memoria.
 - (Donde aplica) Introducción a estructuras más grandes en C++.
 
@@ -51,6 +51,9 @@ mientras resuelves ejercicios reales.
 | j8 | Conversión °F→°C | Aritmética + salida formateada | [Ver j8](./j8) |
 | j23 | Menú + `switch` | Selección múltiple + organización | [Ver j23](./j23) |
 | j28 | `do-while` + chars | Ciclos + ASCII | [Ver j28](./j28) |
+| j41 | Matrices + sumatorias | Matriz tabular + suma de filas/columnas | [Ver j41](./j41) |
+| j51 | CRUD con `struct` | Modularidad + manejo de cadenas | [Ver j51](./j51) |
+| j55 | Registros eliminados | Reutilización de espacios + structs anidados | [Ver j55](./j55) |
 
 ---
 
@@ -81,10 +84,16 @@ mientras resuelves ejercicios reales.
 | j22 | C++ | `switch` | Calculadora por operador | [Abrir](./j22) |
 | j23 | C++ | Menú + `switch` | Áreas de figuras | [Abrir](./j23) |
 | j24 | C++ | Menú + IVA | Peaje por tipo de vehículo | [Abrir](./j24) |
-| j25 | C | Operadores | Operador elegido por usuario | [Abrir](./j25) |
+| j25 | C | Operadores | Operador elegido por el usuario | [Abrir](./j25) |
 | j26 | C | Condicional | Transformación usando una sola variable | [Abrir](./j26) |
 | j27 | C | Tiempo | Diferencia de tiempos HH:MM:SS | [Abrir](./j27) |
 | j28 | C | `do-while` / caracteres | Abecedario Aa, Bb, Cc… (mayús/minús) | [Abrir](./j28) |
+| j40 | C++ | Iteración | Imprime 1..k repetidos y calcula suma/producto por línea | [Abrir](./j40) |
+| j41 | C | Matrices | Matriz 4×5 con sumas por fila y columna | [Abrir](./j41) |
+| j43 | C/C++ | Matrices | Multiplicación de matrices con valores secuenciales | [Abrir](./j43) |
+| j44 | C/C++ | Matrices + modularidad | Stats de matriz 4×4 (suma, prom, min/max y conteos) | [Abrir](./j44) |
+| j51 | C | `struct` / CRUD | Sistema ABC (altas, bajas, cambios) con registros estáticos | [Abrir](./j51) |
+| j55 | C | `struct` avanzado | Materias + prerrequisitos con “recorrer registros eliminados” | [Abrir](./j55) |
 
 ---
 
@@ -160,7 +169,7 @@ Con `MAXIMO_ASISTENCIAS = 34`, pide faltas y calcula porcentaje.
 <details>
 <summary><b>j13 – Vector y factor multiplicador (C)</b></summary>
 
-Lee 10 enteros, luego un factor. Multiplica y guarda en un segundo arreglo.
+Lee 10 enteros, luego un factor. Multiplica y guarda en un segundo arreglo.  
 <i>Restricción: no usar estructuras iterativas.</i>
 
 </details>
@@ -189,7 +198,7 @@ Agrega `struct Carrera` y relaciona `idCarrera` con `Alumno`.
 <details>
 <summary><b>j17 – Descuento en tienda (C++)</b></summary>
 
-Si compra ≥ $50 aplica 20% de descuento.
+Si compra ≥ $50 aplica 20% de descuento.  
 <i>Restricción: solo 1 variable y 1 `if` sin `else`.</i>
 
 </details>
@@ -267,7 +276,94 @@ Calcula tiempo transcurrido o avisa si final < inicial.
 <details>
 <summary><b>j28 – Abecedario con `do-while` (C)</b></summary>
 
-Imprime el abecedario en formato `Aa`, `Bb`, `Cc`, … usando un ciclo `do...while`.
+Imprime el abecedario en formato `Aa`, `Bb`, `Cc`, … usando un ciclo `do...while`.  
 Sirve como ejemplo de manejo de caracteres y recorrido de rangos en ASCII.
 
 </details>
+
+<details>
+<summary><b>j40 – Repetición 1..k con suma y multiplicación (C++)</b></summary>
+
+Solicita un entero positivo `k` y, para cada número `n` de `1` a `k`:
+
+- Imprime `n` repetido `n` veces.
+- Calcula e imprime:
+  - la **suma** de esa repetición,
+  - y la **multiplicación** de esa repetición.
+
+Ejemplo para `k = 4`:
+
+- `1 = 1`, `1 = 1`
+- `2 + 2 = 4`, `2 x 2 = 4`
+- `3 + 3 + 3 = 9`, `3 x 3 x 3 = 27`
+- `4 + 4 + 4 + 4 = 16`, `4 x 4 x 4 x 4 = 256`
+
+</details>
+
+<details>
+<summary><b>j41 – Matriz con sumatorias de filas y columnas (C)</b></summary>
+
+Gestiona una matriz **4×5** rellena con valores secuenciales a partir de un número inicial.
+
+- Suma cada fila y almacena el resultado en un vector lateral.
+- Suma cada columna y almacena el resultado en un vector inferior.
+- Imprime la matriz en formato tabular, alineando las sumatorias.
+
+</details>
+
+<details>
+<summary><b>j43 – Multiplicación de matrices con valores secuenciales (C/C++)</b></summary>
+
+Implementa la **multiplicación matricial** de 2 matrices inicializadas con valores secuenciales.
+
+- Pide un valor inicial al usuario.
+- Inicializa cada celda de ambas matrices con valores diferentes a partir de ese valor.
+- Imprime: matriz A, matriz B y la matriz resultante.
+
+</details>
+
+<details>
+<summary><b>j44 – Matriz 4×4: suma, promedio, min/max y conteos (C/C++)</b></summary>
+
+Solicita valores reales para una matriz **4×4** y muestra:
+
+- Contenido de la matriz.
+- Suma y promedio de los elementos.
+- Posición y valor del **elemento menor**: `[i, j] = x`
+- Posición y valor del **elemento mayor**: `[i, j] = x`
+- Conteos:
+  - cuántos elementos son **iguales** al menor,
+  - cuántos elementos son **iguales** al mayor,
+  - cuántos son **mayores** al menor,
+  - cuántos son **menores** al mayor.
+
+Requiere **programación modular**: al menos una subrutina fuera de `main` que resuelva uno de los incisos.
+
+</details>
+
+<details>
+<summary><b>j51 – Sistema ABC con registros estáticos (C)</b></summary>
+
+Implementa un sistema básico de **Altas, Bajas y Cambios (CRUD/ABC)** usando `struct`.
+
+- Usa un arreglo de registros y funciones modulares para:
+  - registrar elementos,
+  - eliminarlos,
+  - listarlos,
+  - o buscar por posición.
+- Incluye manejo de cadenas con `fgets` y limpieza de buffer para mejorar robustez.
+
+</details>
+
+<details>
+<summary><b>j55 – Gestión de materias con “registros eliminados” (C)</b></summary>
+
+Sistema para gestionar materias y sus prerrequisitos (hasta 3 por materia).
+
+- Implementa la técnica de **recorrer registros eliminados**:
+  - mantiene un arreglo de estado para marcar espacios libres,
+  - y reutiliza esos espacios en nuevas altas sin mover los demás datos.
+- Usa **estructuras anidadas** para organizar materias y requisitos.
+
+</details>
+
